@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Product Search</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+
+  
+</head>
+
+<body>
+
+
+  <script src="input_validation.js"></script>
+
+  <div class="wrapper"><center>
+    <header>Shanthan Wholesale Dealers<br><center>Product Search</center></header>
+    </center>
+    <form onsubmit="return val()" name="myForm" action="message.php" method="post">
+      
+        <div class="field1">
+          <b>Product Name(substring)</b>
+          <input type="text" name="name" id="name" placeholder="">
+        </div>
+        
+      
+      
+      <div class="field1">
+        <b>Warehouse City(substring)</b>
+        <input type="text" name="city" id="city" placeholder="">
+         
+      </div>
+    
+      <div class="dbl-field">
+        <div class="field">
+        <b>Min Quantity</b>
+          <input type="number" step="1" id="miq" name="minQ" placeholder="">
+          
+        </div>
+         <div class="field">
+         <b>Max Quantity</b>
+          <input type="number" step="1" id="maq" name="maxQ" placeholder="">
+         
+        </div>
+      </div>
+      <div class="dbl-field">
+        <div class="field">
+        <b>Min Price</b>
+          <input type="number"  step="any" id="minP" name="minP" placeholder="">
+          
+        </div>
+        <div class="field">
+        <b>Max Price</b>
+          <input type="number" step="any" id="maxP" name="maxP" placeholder="">
+          
+        </div>
+      </div>
+      <div class="dbl-field">
+      <div class="field">
+      <div class="button-area">
+        <button type="reset">Clear Form</button>
+      </div>
+      </div>
+      <div class="field">
+      <div class="button-area">
+        <a><button type="submit" onsubmit="val()">Search Products</button></a>
+        <span></span>
+      </div>
+      </div>
+      </div>
+      
+      
+    </form>
+
+  </div>
+
+
+</body>
+</html>
